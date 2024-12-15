@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Thymeleaf Demo</title>
+    <title>Thymeleaf Demo process Form</title>
 
     <!-- reference css file -->
     <link rel="stylesheet" th:href="@{/css/demo.css}" />
@@ -13,8 +13,8 @@
 <div class="container text-center">
     <div class="card shadow-lg border-0 rounded">
         <div class="card-body">
-            <h1 class="funny">Server Time</h1>
-            <p class="card-text text-muted fs-4" th:text=" 'Time on the server is: ' + ${thedata}" ></p>
+            <h1 class="card-text text-muted fs-4">Student Name: <span th:text="${param.studentName}" /></h1>
+            <p class="funny" >Hello world from spring Form data</p>
         </div>
     </div>
 </div>
